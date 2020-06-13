@@ -11,8 +11,14 @@
     <div id="main">
         
     </div>
-
-    <button id="apiTestButton" onclick="checkAPI()">Press Me To Test API</button>
-    <div id="indicator"></div>
+    <div id="apiTestContainer">
+        <button id="apiTestButton" onclick="checkAPI()">Press Me To Test API</button>
+        <div id="indicator"><img id="ldGif" src="loading.gif" alt="Loading animation" hidden="false" height="100%" style="filter: saturate(3);"></div>
+    </div>
+    <br/>
+    <div id="responseDisplayBox"></div>
+        <code id="responseDisplay" hidden="true"></code>
+    </div>
+    
 </body>
 </html>

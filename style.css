@@ -1,9 +1,43 @@
+html {
+    margin: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#apiTestContainer {
+    width: 100%;
+    display: flex;
+}
+
 #apiTestButton {
-    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 50ms;
+}
+#apiTestButton:active {
+    transform: translateY(1px);
 }
 
 #indicator {
-    background-color: cadetblue;
-    height: 20px;
-    width: 20px;
+    margin: auto; 
+    margin-left: 20px;
+    background-color: grey;
+    height: 35px;
+    width: 35px;
+}
+
+#responseDisplayBox {
+    width: 80%;
+}
+#responseDisplay {
+    background-color: ivory;
+    color: blue;
+    padding: 4px;
+    word-wrap: break-word;
 }
