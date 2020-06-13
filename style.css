@@ -1,0 +1,9 @@
+#apiTestButton {
+    padding: 8px;
+}
+
+#indicator {
+    background-color: cadetblue;
+    height: 20px;
+    width: 20px;
+}
