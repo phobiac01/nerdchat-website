@@ -13,12 +13,21 @@
     </div>
     <div id="apiTestContainer">
         <button id="apiTestButton" onclick="checkAPI()">Press Me To Test API</button>
-        <div id="indicator"><img id="ldGif" src="loading.gif" alt="Loading animation" hidden="false" height="100%" style="filter: saturate(3);"></div>
+        <div id="indicator"><img id="ldGif" src="loading.gif" alt="Loading animation" hidden="false" height="100%" style="filter: brightness(10);"></div>
     </div>
     <br/>
     <div id="responseDisplayBox"></div>
         <code id="responseDisplay" hidden="true"></code>
     </div>
-    
+    <br/>
+    <br/>
+    <div class="chatContentDisplay">
+        <div id="messageDisplay"></div>
+
+        <div id="messageBarContainer">
+            <input id="messageBox" type="text" placeholder=" Start typing..." onkeyup="if(event.keyCode==13) sendMessage();"/>
+            <button id="messageSendButton" onclick="sendMessage()" autofocus>Send &gt;</button>
+        </div>
+    </div>
 </body>
 </html>

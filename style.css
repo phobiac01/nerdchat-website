@@ -30,6 +30,7 @@ body {
     background-color: grey;
     height: 35px;
     width: 35px;
+    border-radius: 6px;
 }
 
 #responseDisplayBox {
@@ -41,3 +42,50 @@ body {
     padding: 4px;
     word-wrap: break-word;
 }
+
+
+
+
+.timestamp {
+    font-size: small;
+    color: grey;
+}
+
+
+#messageDisplay {
+    top: 0;
+    margin-bottom: 50px;
+}
+.messageObject {
+    background-color: ivory;
+    width: 70%;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+
+
+#messageBarContainer {
+    background-color: ivory;
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+}
+#messageBox {
+    background-color: rgb(245, 245, 245);
+    flex-grow: 10;
+    overflow: auto;
+}
+#messageSendButton {
+    background-color: rgb(77, 231, 38);
+    color: rgb(252, 252, 252);
+    font-size: large;
+    flex-grow: 1;
+    float: right;
+}
+
